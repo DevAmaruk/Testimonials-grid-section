@@ -1,0 +1,105 @@
+/* barlow-semi-condensed-500 - Medium */
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/barlow-semi-condensed-v16-latin-500.woff2") format("woff2");
+}
+
+/* barlow-semi-condensed-600 - Semi-Bold */
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/barlow-semi-condensed-v16-latin-600.woff2") format("woff2");
+}
+
+:root {
+  /* Primitives colors */
+  --color-black: #121212;
+  --color-dark-blue: #19202d;
+  --color-white: #ffffff;
+  --color-gray-100: #e7eaee;
+  --color-gray-200: #cfcfcf;
+  --color-gray-400: #676d7e;
+  --color-gray-500: #48556a;
+  --purple-50: #ede4ff;
+  --purple-300: #a775f1;
+  --purple-500: #733fc8;
+  --color-light-gray: #f6f5f6;
+
+  /* Semantic colors */
+  --primary-text: var(--color-white);
+  --primary-text-muted-200: var(--color-gray-200);
+  --primary-text-muted-500: var(--color-gray-500);
+  --secondary-text-100: var(--color-gray-100);
+  --secondary-text-200: var(--color-gray-200);
+  --secondary-text-400: var(--color-gray-400);
+  --secondary-text-purple: var(--purple-50);
+
+  --page-bg-gray: var(--color-light-gray);
+  --card-bg-purple: var(--purple-500);
+  --card-bg-gray: var(--color-gray-500);
+  --card-bg-white: var(--color-white);
+  --card-bg-dark-blue: var(--color-dark-blue);
+
+  --border-profile-purple-muted: var(--purple-300);
+  --border-profile-purple: var(--purple-500);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+/* Text presets */
+
+/* Semi-Bold */
+.text-preset-1 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
+/* Medium */
+.text-preset-2 {
+  line-height: 110%;
+}
+
+.text-preset-3 {
+  line-height: 140%;
+}
+
+.text-preset-4 {
+  font-size: 0.6875rem;
+  line-height: 110%;
+}
+
+.text-preset-2,
+.text-preset-3 {
+  font-size: 0.8125rem;
+}
+
+.text-preset-2,
+.text-preset-3,
+.text-preset-4 {
+  font-weight: 400;
+}
