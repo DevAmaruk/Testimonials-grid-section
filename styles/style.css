@@ -8,7 +8,6 @@ main {
   justify-items: center;
   padding: 1rem;
   gap: 2rem;
-  background-color: var(--page-bg-gray);
 }
 
 /* General card visual */
@@ -18,17 +17,23 @@ main {
   width: 100%;
   max-width: 305px;
   display: grid;
-  gap: 1rem 0;
   position: relative;
   z-index: 0;
-  box-shadow: 40px 70px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 40px 70px 45px rgba(0, 0, 0, 0.15);
+}
+
+.quote-icon {
+  position: absolute;
+  opacity: 0;
+  width: 104px;
+  height: 102px;
 }
 
 .card-header {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr;
   gap: 0 1.0625rem;
+  padding-bottom: 1rem;
 }
 
 .profile {
@@ -138,4 +143,125 @@ main {
 
 .testimonial-content-gray-100 {
   color: var(--secondary-text-100);
+}
+
+/* TABLET MEDIA QUERIES */
+@media (min-width: 48rem) {
+  body {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
+  }
+
+  main {
+    padding: 0;
+    width: 100%;
+    max-width: 647px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quote-icon {
+    opacity: 100;
+    top: 0;
+    right: 167px;
+    z-index: 0;
+  }
+
+  .testimonial-title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .first-card {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .second-card {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .third-card {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .fourth-card {
+    grid-column: span 2;
+    grid-row: 3;
+  }
+
+  .fifth-card {
+    grid-column: span 2;
+    grid-row: 4;
+  }
+
+  .first-card,
+  .fourth-card,
+  .fifth-card {
+    width: 100%;
+    max-width: 647px;
+  }
+
+  .second-card,
+  .third-card {
+    width: 100%;
+    height: 100%;
+    max-width: 307.5px;
+  }
+}
+
+/* DESKTOP MEDIA QUERIES */
+
+@media (min-width: 75rem) {
+  body {
+    height: 100vh;
+  }
+
+  main {
+    padding: 0;
+    max-width: 1114px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .quote-icon {
+    opacity: 100;
+    top: 0;
+    right: 60px;
+    z-index: 0;
+  }
+
+  .first-card {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .second-card {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .third-card {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .fourth-card {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+
+  .fifth-card {
+    grid-column: 4;
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  .first-card,
+  .fourth-card {
+    max-width: 540px;
+  }
 }

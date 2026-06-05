@@ -62,6 +62,7 @@ body {
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--page-bg-gray);
 }
 
 h1,
@@ -76,21 +77,12 @@ p {
 .text-preset-1 {
   font-weight: 600;
   font-size: 1.25rem;
-  line-height: 120%;
 }
 
 /* Medium */
-.text-preset-2 {
-  line-height: 110%;
-}
-
-.text-preset-3 {
-  line-height: 140%;
-}
 
 .text-preset-4 {
   font-size: 0.6875rem;
-  line-height: 110%;
 }
 
 .text-preset-2,
