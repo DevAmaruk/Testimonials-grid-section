@@ -120,7 +120,7 @@ main {
   color: var(--primary-text-muted-500);
 }
 
-.testimonial-title-gray-400 {
+.testimonial-content-gray-400 {
   color: var(--secondary-text-400);
 }
 
@@ -137,10 +137,6 @@ main {
 
 .testimonial-title-gray-200 {
   color: var(--primary-text-muted-200);
-}
-
-.testimonial-content-gray-100 {
-  color: var(--secondary-text-100);
 }
 
 /* TABLET MEDIA QUERIES */
