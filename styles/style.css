@@ -138,6 +138,11 @@ main {
   main {
     padding: 0;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 40.4375rem;
+  }
+
+  .card-testimonial {
+    max-width: 100%;
   }
 
   .quote-icon {
@@ -177,16 +182,9 @@ main {
     grid-row: 4;
   }
 
-  .first-card,
-  .fourth-card,
-  .fifth-card {
-    max-width: 40.4375rem;
-  }
-
   .second-card,
   .third-card {
     height: 100%;
-    max-width: 19.21875rem;
   }
 }
 
@@ -231,10 +229,5 @@ main {
     grid-column: 4;
     grid-row: span 2;
     height: 100%;
-  }
-
-  .first-card,
-  .fourth-card {
-    max-width: 33.75rem;
   }
 }
