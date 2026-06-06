@@ -69,19 +69,23 @@ main {
   border-style: solid;
 }
 
+.card-title {
+  color: var(--card-primary-text);
+}
+
+.card-subtitle {
+  color: var(--card-subtitle-text);
+}
+
+.card-body {
+  color: var(--card-secondary-text);
+}
+
 /* DANIEL CLIFFORD CARD */
 .daniel-card {
   background-color: var(--card-bg-purple);
-}
-
-.daniel-card h1,
-.daniel-card .testimonial-title {
-  color: var(--primary-text);
-}
-
-.daniel-card h2,
-.daniel-card .testimonial-content {
-  color: var(--secondary-text-purple);
+  --card-primary-text: var(--primary-text);
+  --card-secondary-text: var(--secondary-text-purple);
 }
 
 .border-profile-purple-muted {
@@ -91,52 +95,24 @@ main {
 /* JONATHAN WALTERS CARD*/
 .jonathan-card {
   background-color: var(--card-bg-gray);
-}
-
-.jonathan-card h1,
-.jonathan-card .testimonial-title {
-  color: var(--primary-text);
-}
-
-.jonathan-card h2 {
-  color: var(--secondary-text-200);
-}
-
-.jonathan-card .testimonial-content {
-  color: var(--secondary-text-100);
+  --card-primary-text: var(--primary-text);
+  --card-subtitle-text: var(--secondary-text-200);
+  --card-secondary-text: var(--secondary-text-100);
 }
 
 /* JEANETTE HARMON */
 .jeanette-card {
   background-color: var(--card-bg-white);
-}
-
-.jeanette-card h1,
-.jeanette-card .testimonial-title {
-  color: var(--primary-text-muted-500);
-}
-
-.jeanette-card h2,
-.jeanette-card .testimonial-content {
-  color: var(--secondary-text-400);
+  --card-primary-text: var(--primary-text-muted-500);
+  --card-secondary-text: var(--secondary-text-400);
 }
 
 /* PATRICK ABRAMS CARD*/
 .patrick-card {
   background-color: var(--card-bg-dark-blue);
-}
-
-.patrick-card h1,
-.patrick-card h2 {
-  color: var(--primary-text);
-}
-
-.patrick-card .testimonial-title {
-  color: var(--primary-text-muted-200);
-}
-
-.patrick-card .testimonial-content {
-  color: var(--secondary-text-100);
+  --card-primary-text: var(--primary-text);
+  --card-secondary-text: var(--primary-text-muted-200);
+  --card-subtitle-text: var(--secondary-text-100);
 }
 
 .border-profile-purple {
@@ -146,16 +122,8 @@ main {
 /* KIRA CARD */
 .kira-card {
   background-color: var(--card-bg-white);
-}
-
-.kira-card h1,
-.kira-card .testimonial-title {
-  color: var(--primary-text-muted-500);
-}
-
-.kira-card h2,
-.kira-card .testimonial-content {
-  color: var(--secondary-text-400);
+  --card-primary-text: var(--primary-text-muted-500);
+  --card-secondary-text: var(--secondary-text-400);
 }
 
 /* TABLET MEDIA QUERIES */
@@ -179,7 +147,7 @@ main {
     z-index: 0;
   }
 
-  .testimonial-title {
+  .card-title {
     position: relative;
     z-index: 1;
   }
