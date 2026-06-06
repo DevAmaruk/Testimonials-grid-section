@@ -13,7 +13,7 @@ main {
   border-radius: 0.5rem;
   padding: 2rem;
   width: 100%;
-  max-width: 305px;
+  max-width: 19.0625rem;
   display: grid;
   position: relative;
   z-index: 0;
@@ -63,60 +63,99 @@ main {
   gap: 1rem;
 }
 
-.white-text {
-  color: var(--primary-text);
+.border-profile-purple,
+.border-profile-purple-muted {
+  border-width: 2px;
+  border-style: solid;
 }
 
-/* Purple Card */
-.purple-card {
+/* DANIEL CLIFFORD CARD */
+.daniel-card {
   background-color: var(--card-bg-purple);
 }
 
-.purple-text {
+.daniel-card h1,
+.daniel-card .testimonial-title {
+  color: var(--primary-text);
+}
+
+.daniel-card h2,
+.daniel-card .testimonial-content {
   color: var(--secondary-text-purple);
 }
 
 .border-profile-purple-muted {
-  border-width: 2px;
-  border-style: solid;
   border-color: var(--border-profile-purple-muted);
 }
 
-/* Grey 500 Card */
-.grey-card {
+/* JONATHAN WALTERS CARD*/
+.jonathan-card {
   background-color: var(--card-bg-gray);
 }
 
-.grey-200-text {
-  color: var(--primary-text-muted-200);
+.jonathan-card h1,
+.jonathan-card .testimonial-title {
+  color: var(--primary-text);
 }
 
-.testimonial-content-gray-100 {
+.jonathan-card h2 {
+  color: var(--secondary-text-200);
+}
+
+.jonathan-card .testimonial-content {
   color: var(--secondary-text-100);
 }
 
-/* White Card */
-.white-card {
+/* JEANETTE HARMON */
+.jeanette-card {
   background-color: var(--card-bg-white);
 }
 
-.grey-500-text {
+.jeanette-card h1,
+.jeanette-card .testimonial-title {
   color: var(--primary-text-muted-500);
 }
 
-.grey-400-text {
+.jeanette-card h2,
+.jeanette-card .testimonial-content {
   color: var(--secondary-text-400);
 }
 
-/* Dark Blue card */
-.dark-blue-card {
+/* PATRICK ABRAMS CARD*/
+.patrick-card {
   background-color: var(--card-bg-dark-blue);
 }
 
+.patrick-card h1,
+.patrick-card h2 {
+  color: var(--primary-text);
+}
+
+.patrick-card .testimonial-title {
+  color: var(--primary-text-muted-200);
+}
+
+.patrick-card .testimonial-content {
+  color: var(--secondary-text-100);
+}
+
 .border-profile-purple {
-  border-width: 2px;
-  border-style: solid;
   border-color: var(--border-profile-purple);
+}
+
+/* KIRA CARD */
+.kira-card {
+  background-color: var(--card-bg-white);
+}
+
+.kira-card h1,
+.kira-card .testimonial-title {
+  color: var(--primary-text-muted-500);
+}
+
+.kira-card h2,
+.kira-card .testimonial-content {
+  color: var(--secondary-text-400);
 }
 
 /* TABLET MEDIA QUERIES */
@@ -130,8 +169,6 @@ main {
 
   main {
     padding: 0;
-    width: 100%;
-    max-width: 647px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -176,14 +213,14 @@ main {
   .fourth-card,
   .fifth-card {
     width: 100%;
-    max-width: 647px;
+    max-width: 40.4375rem;
   }
 
   .second-card,
   .third-card {
     width: 100%;
     height: 100%;
-    max-width: 307.5px;
+    max-width: 19.21875rem;
   }
 }
 
@@ -196,7 +233,7 @@ main {
 
   main {
     padding: 0;
-    max-width: 1114px;
+    max-width: 69.625rem;
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -233,6 +270,6 @@ main {
 
   .first-card,
   .fourth-card {
-    max-width: 540px;
+    max-width: 33.75rem;
   }
 }
