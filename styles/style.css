@@ -67,10 +67,6 @@ main {
   color: var(--primary-text);
 }
 
-.testimonial-title-white {
-  color: var(--primary-text);
-}
-
 /* Purple Card */
 .purple-card {
   background-color: var(--card-bg-purple);
@@ -84,10 +80,6 @@ main {
   border-width: 2px;
   border-style: solid;
   border-color: var(--border-profile-purple-muted);
-}
-
-.testimonial-content-purple {
-  color: var(--secondary-text-purple);
 }
 
 /* Grey 500 Card */
@@ -116,14 +108,6 @@ main {
   color: var(--secondary-text-400);
 }
 
-.testimonial-title-gray-500 {
-  color: var(--primary-text-muted-500);
-}
-
-.testimonial-content-gray-400 {
-  color: var(--secondary-text-400);
-}
-
 /* Dark Blue card */
 .dark-blue-card {
   background-color: var(--card-bg-dark-blue);
@@ -133,10 +117,6 @@ main {
   border-width: 2px;
   border-style: solid;
   border-color: var(--border-profile-purple);
-}
-
-.testimonial-title-gray-200 {
-  color: var(--primary-text-muted-200);
 }
 
 /* TABLET MEDIA QUERIES */
