@@ -23,8 +23,8 @@ main {
 .quote-icon {
   position: absolute;
   opacity: 0;
-  width: 104px;
-  height: 102px;
+  width: 6.5rem;
+  height: 6.375rem;
 }
 
 .card-header {
